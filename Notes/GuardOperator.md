@@ -23,4 +23,4 @@ console.log(user2.name);
 ```
 Trying to log user2.name right here would result in an uncaught error: Uncaught TypeError: Cannot read property 'name' of undefined.
 
-    > Uncaught errors are bad! They'll stop our code execution. This could result in some really ugly errors for users.
+>Uncaught errors are bad! They'll stop our code execution. This could result in some really ugly errors for users.
