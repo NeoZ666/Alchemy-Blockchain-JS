@@ -23,4 +23,4 @@ console.log( Object.keys(object) ); // ['a', 'b', 'c']
 console.log( Object.values(object) ); // [1, 2, 3]
 ```
 
-There are actually quite a few methods on Object, you can find them all [here] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor)
+There are actually quite a few methods on Object, you can find them all [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods_of_the_Object_constructor)
