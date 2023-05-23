@@ -1,5 +1,5 @@
-// Given a string, convert it to a number.
-// If the string is not a number, return 0
+>Given a string, convert it to a number.
+>If the string is not a number, return 0
 
 Method 1: Using isNaN() function
 ```
