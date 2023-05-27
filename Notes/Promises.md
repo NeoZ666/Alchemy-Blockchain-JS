@@ -17,9 +17,9 @@ Let's take a look at an example:
 runAnimation(function() {
     // do something after the animation is complete
 });
-
+```
 Promises give us an alternate way to configure our callback functions:
-
+```
 const animationPromise = runAnimation();
 
 animationPromise.then(() => {
