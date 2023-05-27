@@ -2,10 +2,10 @@
 
 Quite often when we're writing JavaScript code we need to wait for something to happen before continuing. Some examples are:
 
-    >Waiting for a user's input
-    >Waiting for an animation to finish
-    >Waiting for some time to elapse
-    >Waiting for a server response
+>Waiting for a user's input
+>Waiting for an animation to finish
+>Waiting for some time to elapse
+>Waiting for a server response
 
 In all of these cases we write asynchronous code. We tell JavaScript where to pick up after something has occurred. We can do this by passing a callback function as an argument to a function.
 
