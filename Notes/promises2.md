@@ -1,5 +1,6 @@
-***Using Promises***
+# Using Promises
 
+# Notes
 JavaScript is single-threaded. Because of this you will find yourself writing quite a bit of asynchronous code. This refers to writing code that will execute at some future point in time after something has happened.
 
 Providing a callback function as an argument is a classic way of handling asynchronous code. We went over this approach in Callback Functions.
@@ -21,6 +22,7 @@ Here getServerData returns a promise.
 We can call .then and provide a function that is invoked once the server data is resolved.
 Your Goal: Make the Food!
 
+## Exercise Goal: {Input}
 We need to make some food!
 
 When the customer asks for food, the request function will be invoked. This function should call the function makeFood which takes food as its only argument. The function makeFood will return a promise.
@@ -28,3 +30,22 @@ When the customer asks for food, the request function will be invoked. This func
 >The makeFood function is imported at the top of the file from Kitchen.
 
 Add a callback function to the .then of the makeFood promise. Once it is called the food is ready! At that point set the order isReady is true.
+
+## Output:
+
+```
+const { makeFood } = require('./Kitchen');
+
+class Order {
+    constructor() {
+        this.isReady = false;
+    }
+    request(food) {
+        makeFood(food).then(() => {
+            this.isReady = true;
+        });
+    }
+}
+
+module.exports = Order;
+```
