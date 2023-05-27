@@ -46,3 +46,33 @@ The three functions have been imported for you. Each function returns a promise,
 3. Pass the response to logResponse. There is no return value here. You can choose to either return the promise from logResponse or use await so the function will not resolve until after logResponse is complete.
 
 >Notice that the async keyword has already been added to the handleResults function. This will allow us to use await within the function.
+
+
+## Your Goal 2: Catch an Error
+
+If an error is thrown in any of the asynchronous functions we called in the last stage, let's catch it.
+
+Once we have the exception, pass it to logError.
+
+
+# Output:
+
+```
+const { getResults } = require('./lab');
+const { sendResults } = require('./messaging');
+const { logResponse, logError } = require('./logs');
+
+async function handleResults(patientId) {
+    try {
+        const results = await getResults(patientId);
+        const response = await sendResults(patientId, results);
+        return await logResponse(response); 
+    }
+    catch(error) {
+        logError(error);
+    }
+
+}
+
+module.exports = handleResults;
+```

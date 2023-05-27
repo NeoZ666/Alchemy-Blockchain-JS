@@ -20,7 +20,7 @@ function processRequest(response) {
 }
 
 async function doThing() {
-    try{ const response = await makeRequest("gooGle"); } catch(error) { console.error(error); }
+    try{ const response = await makeRequest("gooGle"); } catch(error){ console.error(error); }
     console.log("Response received from google.com");
     const processResponse = await processRequest(response);
     console.log(processResponse);
